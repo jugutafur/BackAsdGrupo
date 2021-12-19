@@ -1,1 +1,1 @@
-web: java -jar -Dspring.profiles.active=pdn build/libs/back-0.0.1-SNAPSHOT-1.0.jar
+web: java -jar -Dspring.profiles.active=pdn build/libs/back-1.0.jar
