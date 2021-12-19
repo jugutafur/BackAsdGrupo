@@ -14,7 +14,7 @@ public class Activo {
     @Column(name = "nombreresponsable")
     private String nombreResponsable;
     @Column(name = "identificacionresponsable")
-    private String identificacionResponsable;
+    private Integer identificacionResponsable;
     @Column(name = "cargoresponsable")
     private String cargoResponsable;
     @Column(name = "nombreactivo")
@@ -28,9 +28,9 @@ public class Activo {
     @Column(name = "numeroInternoinventarioactivo")
     private String numeroInternoInventarioActivo;
     @Column(name = "valoractivo")
-    private String valorActivo;
+    private Integer valorActivo;
     @Column(name = "fechacompra")
-    private String fechaCompra;
+    private Date fechaCompra;
 
 
     public Integer getId() {return id;}
@@ -46,9 +46,8 @@ public class Activo {
     public void setNombreResponsable(String nombreResponsable) {
         this.nombreResponsable = nombreResponsable;}
 
-    public String getIdentificacionResponsable() {return identificacionResponsable;}
-    public void setIdentificacionResponsable(String identificacionResponsable) {
-        this.identificacionResponsable = identificacionResponsable;}
+    public Integer getIdentificacionResponsable() {return identificacionResponsable;}
+    public void setIdentificacionResponsable(Integer identificacionResponsable) {this.identificacionResponsable = identificacionResponsable;}
 
     public String getCargoResponsable() {return cargoResponsable;}
     public void setCargoResponsable(String cargoResponsable) {this.cargoResponsable = cargoResponsable;}
@@ -69,9 +68,9 @@ public class Activo {
     public void setNumeroInternoInventarioActivo(String numeroInternoInventarioActivo) {
         this.numeroInternoInventarioActivo = numeroInternoInventarioActivo;}
 
-    public String getValorActivo() {return valorActivo;}
-    public void setValorActivo(String valorActivo) {this.valorActivo = valorActivo;}
+    public Integer getValorActivo() {return valorActivo;}
+    public void setValorActivo(Integer valorActivo) {this.valorActivo = valorActivo;}
 
-    public String getFechaCompra() {return fechaCompra;}
-    public void setFechaCompra(String fechaCompra) {this.fechaCompra = fechaCompra;}
+    public Date getFechaCompra() {return fechaCompra;}
+    public void setFechaCompra(Date fechaCompra) {this.fechaCompra = fechaCompra;}
 }

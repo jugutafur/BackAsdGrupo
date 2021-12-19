@@ -41,7 +41,7 @@ public class ActivoController {
 
     @PostMapping("/save")
     @ApiOperation("Add new user")
-    public Active saverActive(@RequestBody Active active){
+    public Active saveActive(@RequestBody Active active){
         return activeService.saveActive(active);
     }
 

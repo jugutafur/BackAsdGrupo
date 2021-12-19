@@ -1,7 +1,6 @@
 package com.asd.back.Domain.Repository;
 
 import com.asd.back.Domain.Active;
-import com.asd.back.Domain.City;
 
 import java.util.List;
 import java.util.Optional;
