@@ -1,0 +1,77 @@
+package com.asd.back.Persistence.Entity;
+
+import javax.persistence.*;
+import java.util.Date;
+
+@Entity
+@Table(name= "activo")
+public class Activo {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+    private String tipo;
+    private String ciudad;
+    @Column(name = "nombreresponsable")
+    private String nombreResponsable;
+    @Column(name = "identificacionresponsable")
+    private String identificacionResponsable;
+    @Column(name = "cargoresponsable")
+    private String cargoResponsable;
+    @Column(name = "nombreactivo")
+    private String nombreActivo;
+    @Column(name = "descripcionactivo")
+    private String descripcionActivo;
+    @Column(name = "dimensionesactivo")
+    private String dimensionesActivo;
+    @Column(name = "serialactivo")
+    private String serialActivo;
+    @Column(name = "numeroInternoinventarioactivo")
+    private String numeroInternoInventarioActivo;
+    @Column(name = "valoractivo")
+    private String valorActivo;
+    @Column(name = "fechacompra")
+    private String fechaCompra;
+
+
+    public Integer getId() {return id;}
+    public void setId(Integer id) {this.id = id;}
+
+    public String getTipo() {return tipo;}
+    public void setTipo(String tipo) {this.tipo = tipo;}
+
+    public String getCiudad() {return ciudad;}
+    public void setCiudad(String ciudad) {this.ciudad = ciudad;}
+
+    public String getNombreResponsable() {return nombreResponsable;}
+    public void setNombreResponsable(String nombreResponsable) {
+        this.nombreResponsable = nombreResponsable;}
+
+    public String getIdentificacionResponsable() {return identificacionResponsable;}
+    public void setIdentificacionResponsable(String identificacionResponsable) {
+        this.identificacionResponsable = identificacionResponsable;}
+
+    public String getCargoResponsable() {return cargoResponsable;}
+    public void setCargoResponsable(String cargoResponsable) {this.cargoResponsable = cargoResponsable;}
+
+    public String getNombreActivo() {return nombreActivo;}
+    public void setNombreActivo(String nombreActivo) {this.nombreActivo = nombreActivo;}
+
+    public String getDescripcionActivo() {return descripcionActivo;}
+    public void setDescripcionActivo(String descripcionActivo) {this.descripcionActivo = descripcionActivo;}
+
+    public String getDimensionesActivo() {return dimensionesActivo;}
+    public void setDimensionesActivo(String dimensionesActivo) {this.dimensionesActivo = dimensionesActivo;}
+
+    public String getSerialActivo() {return serialActivo;}
+    public void setSerialActivo(String serialActivo) {this.serialActivo = serialActivo;}
+
+    public String getNumeroInternoInventarioActivo() {return numeroInternoInventarioActivo;}
+    public void setNumeroInternoInventarioActivo(String numeroInternoInventarioActivo) {
+        this.numeroInternoInventarioActivo = numeroInternoInventarioActivo;}
+
+    public String getValorActivo() {return valorActivo;}
+    public void setValorActivo(String valorActivo) {this.valorActivo = valorActivo;}
+
+    public String getFechaCompra() {return fechaCompra;}
+    public void setFechaCompra(String fechaCompra) {this.fechaCompra = fechaCompra;}
+}
