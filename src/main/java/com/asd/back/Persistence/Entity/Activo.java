@@ -1,6 +1,7 @@
 package com.asd.back.Persistence.Entity;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @Entity
@@ -25,12 +26,12 @@ public class Activo {
     private String dimensionesActivo;
     @Column(name = "serialactivo")
     private String serialActivo;
-    @Column(name = "numeroInternoinventarioactivo")
+    @Column(name = "numerointernoinventarioactivo")
     private String numeroInternoInventarioActivo;
     @Column(name = "valoractivo")
     private Integer valorActivo;
     @Column(name = "fechacompra")
-    private Date fechaCompra;
+    private LocalDateTime fechaCompra;
 
 
     public Integer getId() {return id;}
@@ -71,6 +72,6 @@ public class Activo {
     public Integer getValorActivo() {return valorActivo;}
     public void setValorActivo(Integer valorActivo) {this.valorActivo = valorActivo;}
 
-    public Date getFechaCompra() {return fechaCompra;}
-    public void setFechaCompra(Date fechaCompra) {this.fechaCompra = fechaCompra;}
+    public LocalDateTime getFechaCompra() {return fechaCompra;}
+    public void setFechaCompra(LocalDateTime fechaCompra) {this.fechaCompra = fechaCompra;}
 }

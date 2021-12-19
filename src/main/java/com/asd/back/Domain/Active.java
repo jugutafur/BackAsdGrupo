@@ -1,5 +1,6 @@
 package com.asd.back.Domain;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 public class Active {
@@ -15,7 +16,7 @@ public class Active {
     private String serieActive;
     private String numberInsideInventoryActive;
     private int valueActive;
-    private Date datePurchuse;
+    private LocalDateTime  datePurchuse;
 
     public int getId() {return id;}
     public void setId(int id) {this.id = id;}
@@ -59,6 +60,6 @@ public class Active {
     public int getValueActive() {return valueActive;}
     public void setValueActive(int valueActive) {this.valueActive = valueActive;}
 
-    public Date getDatePurchuse() {return datePurchuse;}
-    public void setDatePurchuse(Date datePurchuse) {this.datePurchuse = datePurchuse;}
+    public LocalDateTime getDatePurchuse() {return datePurchuse;}
+    public void setDatePurchuse(LocalDateTime datePurchuse) {this.datePurchuse = datePurchuse;}
 }

@@ -2,10 +2,7 @@ package com.asd.back.Web.Controller;
 
 
 import com.asd.back.Domain.Active;
-import com.asd.back.Domain.Machine;
-import com.asd.back.Domain.Repository.ActiveRepository;
 import com.asd.back.Domain.Service.ActiveService;
-import com.asd.back.Domain.Service.MachineService;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import io.swagger.annotations.ApiResponse;
@@ -19,7 +16,6 @@ import java.util.Optional;
 @RequestMapping("/Activo")
 @CrossOrigin(origins = "*", methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE})
 public class ActivoController {
-
 
     @Autowired
     private ActiveService activeService;
