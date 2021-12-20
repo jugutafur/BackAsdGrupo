@@ -6,7 +6,7 @@ import java.util.Date;
 public class Active {
     private int id;
     private String type;
-    private String city;
+    private String city;/*
     private String nameResponsible;
     private int identificationResponsible;
     private String positionResponsible;
@@ -16,8 +16,8 @@ public class Active {
     private String serieActive;
     private String numberInsideInventoryActive;
     private int valueActive;
-    private LocalDateTime  datePurchuse;
-
+    private Date  datePurchuse;
+*/
     public int getId() {return id;}
     public void setId(int id) {this.id = id;}
 
@@ -26,7 +26,7 @@ public class Active {
 
     public String getCity() {return city;}
     public void setCity(String city) {this.city = city;}
-
+/*
     public String getNameResponsible() {return nameResponsible;}
     public void setNameResponsible(String nameResponsible) {
         this.nameResponsible = nameResponsible;}
@@ -60,6 +60,6 @@ public class Active {
     public int getValueActive() {return valueActive;}
     public void setValueActive(int valueActive) {this.valueActive = valueActive;}
 
-    public LocalDateTime getDatePurchuse() {return datePurchuse;}
-    public void setDatePurchuse(LocalDateTime datePurchuse) {this.datePurchuse = datePurchuse;}
+    public Date getDatePurchuse() {return datePurchuse;}
+    public void setDatePurchuse(Date datePurchuse) {this.datePurchuse = datePurchuse;}*/
 }
