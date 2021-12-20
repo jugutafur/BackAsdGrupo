@@ -40,4 +40,9 @@ public class ActivoRepository implements ActiveRepository {
     @Override
     public void deleteActive(int activeId) {activoCRUDRepository.deleteById(activeId);
     }
+
+    @Override
+    public String getActiveByType(String type) {
+        return  "Este es el tipo "+ type;
+    }
 }

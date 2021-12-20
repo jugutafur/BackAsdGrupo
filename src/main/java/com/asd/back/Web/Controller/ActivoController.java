@@ -46,6 +46,11 @@ public class ActivoController {
         return activeService.deleteActive(activeId);
     }
 
+    @DeleteMapping("/tipo/{type}")
+    public String getActiveByType(@PathVariable("type") String type) {
+        return activeService.getActiveByType(type);
+    }
+
     @RequestMapping("/espana")
     public String cadena(){
         return "desde el back";

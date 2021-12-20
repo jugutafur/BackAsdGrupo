@@ -31,4 +31,8 @@ public class ActiveService{
             return true;
         }).orElse(false);
     }
+
+    public String getActiveByType(String type){
+        return activeRepository.getActiveByType(type);
+    }
 }

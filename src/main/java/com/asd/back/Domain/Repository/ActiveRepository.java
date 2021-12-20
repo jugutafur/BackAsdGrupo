@@ -11,4 +11,5 @@ public interface ActiveRepository {
     Optional<Active> getActive(int id);
     Active saveActive(Active active);
     void deleteActive(int activeId);
+    String getActiveByType(String type);
 }
