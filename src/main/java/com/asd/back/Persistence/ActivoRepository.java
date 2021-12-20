@@ -55,14 +55,14 @@ public class ActivoRepository implements ActiveRepository {
             System.out.println("desde la consola 1");
             //List<Active> activos = activoCRUDRepository.findByType(type);
             //return activos;
-            List<Activo> activos = (List<Activo>) activoCRUDRepository.findByTipo(type);
+            List<Activo> activos = (List<Activo>) activoCRUDRepository.findAll();
             return activeMapper.toListActive(activos);
 
         }else{
             ahora = "Muebles";
             //"vas a mostrar Muebles"
             System.out.println("desde la consola 2");
-            List<Activo> activos = (List<Activo>) activoCRUDRepository.findByTipo(type);
+            List<Activo> activos = (List<Activo>) activoCRUDRepository.findAll();
             return activeMapper.toListActive(activos);
         }
         /*
