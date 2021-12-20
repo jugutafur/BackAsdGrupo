@@ -24,7 +24,7 @@ public interface ActiveMapper {
             @Mapping(source = "serialActivo", target = "serieActive"),
             @Mapping(source = "numeroInternoInventarioActivo", target = "numberInsideInventoryActive"),
             @Mapping(source = "valorActivo", target = "valueActive"),
-            @Mapping(source = "fechaCompra", target = "datePurchuse"),
+            @Mapping(source = "fechaCompra", target = "datePurchuse")
     })
     Active toActive(Activo activo);
     List<Active> toListActive(List<Activo> activos);

@@ -38,11 +38,25 @@ public class ActivoRepository implements ActiveRepository {
     }
 
     @Override
-    public void deleteActive(int activeId) {activoCRUDRepository.deleteById(activeId);
+    public void deleteActive(int activeId) {
+        activoCRUDRepository.deleteById(activeId);
     }
 
     @Override
-    public String getActiveByType(String type) {
-        return  "Este es el tipo "+ type;
+    public List<Active> getActiveByType(int type) {
+        //System.out.println("esta es la varaible por path " +type);
+        //List<Activo> activos = (List<Activo>) activoCRUDRepository.findAll();
+        //return activeMapper.toListActive(activos);
+        if(type == 1){
+            //"vas a mostrar Maquinaria"
+            List<Activo> activos = (List<Activo>) activoCRUDRepository.findAll();
+            return activeMapper.toListActive(activos);
+
+        }else{
+            //"vas a mostrar Muebles"
+            List<Activo> activos = (List<Activo>) activoCRUDRepository.findAll();
+            return activeMapper.toListActive(activos);
+        }
+
     }
 }

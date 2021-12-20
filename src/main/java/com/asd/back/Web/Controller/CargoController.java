@@ -23,7 +23,7 @@ public class CargoController {
     @GetMapping("/todos")
     @ApiOperation("Get all Register")
     @ApiResponse(code = 200 , message = "Data of DB")
-    public List<Position> getAllPositon() {return positionService.getAllPosition(); }
+    public List<Position> getAllPosition() {return positionService.getAllPosition(); }
 
 
     @GetMapping("{este}")

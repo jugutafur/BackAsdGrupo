@@ -32,7 +32,7 @@ public class ActiveService{
         }).orElse(false);
     }
 
-    public String getActiveByType(String type){
+    public List<Active> getActiveByType(int type){
         return activeRepository.getActiveByType(type);
     }
 }
