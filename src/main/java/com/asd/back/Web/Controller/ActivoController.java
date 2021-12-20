@@ -46,7 +46,7 @@ public class ActivoController {
         return activeService.deleteActive(activeId);
     }
 
-    @DeleteMapping("/tipo/{type}")
+    @GetMapping("/tipo/{type}")
     public String getActiveByType(@PathVariable("type") String type) {
         return activeService.getActiveByType(type);
     }
