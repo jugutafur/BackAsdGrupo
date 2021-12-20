@@ -5,6 +5,7 @@ import com.asd.back.Domain.Repository.ActiveRepository;
 import com.asd.back.Persistence.CRUD.ActivoCRUDRepository;
 import com.asd.back.Persistence.Entity.Activo;
 import com.asd.back.Persistence.Mapper.ActiveMapper;
+import com.asd.back.Persistence.functions.Predicete;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -51,17 +52,25 @@ public class ActivoRepository implements ActiveRepository {
         if(type == 1){
             ahora = "Maquinaria";
             //"vas a mostrar Maquinaria"
+            System.out.println("desde la consola 1");
             //List<Active> activos = activoCRUDRepository.findByType(type);
             //return activos;
-            List<Activo> activos = (List<Activo>) activoCRUDRepository.findByType(ahora);
+            List<Activo> activos = (List<Activo>) activoCRUDRepository.findByTipo(type);
             return activeMapper.toListActive(activos);
 
         }else{
             ahora = "Muebles";
             //"vas a mostrar Muebles"
-            List<Activo> activos = (List<Activo>) activoCRUDRepository.findByType(ahora);
+            System.out.println("desde la consola 2");
+            List<Activo> activos = (List<Activo>) activoCRUDRepository.findByTipo(type);
             return activeMapper.toListActive(activos);
         }
+        /*
+        public List<Active> getActiveByType(Predicete<Active> filter){
 
+            List<Active> activos = activoCRUDRepository.findByType(type);
+
+        }
+         */
     }
 }
