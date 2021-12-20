@@ -44,6 +44,7 @@ public class ActivoRepository implements ActiveRepository {
 
     @Override
     public List<Active> getActiveByType(int type) {
+        String ahora = ""+type;
         //System.out.println("esta es la varaible por path " +type);
         //List<Activo> activos = (List<Activo>) activoCRUDRepository.findAll();
         //return activeMapper.toListActive(activos);
@@ -51,12 +52,12 @@ public class ActivoRepository implements ActiveRepository {
             //"vas a mostrar Maquinaria"
             //List<Active> activos = activoCRUDRepository.findByType(type);
             //return activos;
-            List<Activo> activos = (List<Activo>) activoCRUDRepository.findByType(type);
+            List<Activo> activos = (List<Activo>) activoCRUDRepository.findByType(ahora);
             return activeMapper.toListActive(activos);
 
         }else{
             //"vas a mostrar Muebles"
-            List<Activo> activos = (List<Activo>) activoCRUDRepository.findByType(type);
+            List<Activo> activos = (List<Activo>) activoCRUDRepository.findByType(ahora);
             return activeMapper.toListActive(activos);
         }
 
