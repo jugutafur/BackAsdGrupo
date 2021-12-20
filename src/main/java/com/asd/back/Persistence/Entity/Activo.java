@@ -11,7 +11,7 @@ public class Activo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String tipo;
-    private String ciudad;/*
+    private String ciudad;
     @Column(name = "nombreresponsable")
     private String nombreResponsable;
     @Column(name = "identificacionresponsable")
@@ -32,7 +32,7 @@ public class Activo {
     private Integer valorActivo;
     @Column(name = "fechacompra")
     private Date fechaCompra;
-*/
+
 
     public Integer getId() {return id;}
     public void setId(Integer id) {this.id = id;}
@@ -42,7 +42,7 @@ public class Activo {
 
     public String getCiudad() {return ciudad;}
     public void setCiudad(String ciudad) {this.ciudad = ciudad;}
-/*
+
     public String getNombreResponsable() {return nombreResponsable;}
     public void setNombreResponsable(String nombreResponsable) {
         this.nombreResponsable = nombreResponsable;}
@@ -74,5 +74,4 @@ public class Activo {
 
     public Date getFechaCompra() {return fechaCompra;}
     public void setFechaCompra(Date fechaCompra) {this.fechaCompra = fechaCompra;}
-    */
 }

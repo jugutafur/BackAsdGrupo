@@ -14,7 +14,7 @@ public interface ActiveMapper {
 
     @Mappings({
             @Mapping(source = "tipo", target = "type"),
-            @Mapping(source = "ciudad", target = "city")/*
+            @Mapping(source = "ciudad", target = "city"),
             @Mapping(source = "nombreResponsable", target = "nameResponsible"),
             @Mapping(source = "identificacionResponsable", target = "identificationResponsible"),
             @Mapping(source = "cargoResponsable", target = "positionResponsible"),
@@ -24,8 +24,9 @@ public interface ActiveMapper {
             @Mapping(source = "serialActivo", target = "serieActive"),
             @Mapping(source = "numeroInternoInventarioActivo", target = "numberInsideInventoryActive"),
             @Mapping(source = "valorActivo", target = "valueActive"),
-            @Mapping(source = "fechaCompra", target = "datePurchuse")*/
+            @Mapping(source = "fechaCompra", target = "datePurchuse")
     })
+
     Active toActive(Activo activo);
     List<Active> toListActive(List<Activo> activos);
 

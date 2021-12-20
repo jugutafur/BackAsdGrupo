@@ -2,7 +2,9 @@ package com.asd.back.Web.Controller;
 
 
 import com.asd.back.Domain.Active;
+import com.asd.back.Domain.Furniture;
 import com.asd.back.Domain.Service.ActiveService;
+import com.asd.back.Domain.Service.FurnitureService;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import io.swagger.annotations.ApiResponse;
@@ -24,7 +26,6 @@ public class ActivoController {
     @ApiOperation("Get all Register")
     @ApiResponse(code = 200 , message = "Data of DB")
     public List<Active> getAllActive() {return activeService.getAllActive(); }
-
 
     @GetMapping("{este}")
     @ApiOperation("Get only item")
