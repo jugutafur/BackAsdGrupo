@@ -49,6 +49,8 @@ public class ActivoRepository implements ActiveRepository {
         //return activeMapper.toListActive(activos);
         if(type == 1){
             //"vas a mostrar Maquinaria"
+            //return activoCRUDRepository.findByType(type)
+            //        .map(actives->activeMapper.toListActive(actives));
             List<Activo> activos = (List<Activo>) activoCRUDRepository.findAll();
             return activeMapper.toListActive(activos);
 
