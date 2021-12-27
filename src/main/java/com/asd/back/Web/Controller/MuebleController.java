@@ -21,6 +21,11 @@ public class MuebleController {
     @Autowired
     private FurnitureService furnitureService;
 
+    @GetMapping(value = "status")
+    String checkStatus(){
+        return "ok";
+    }
+
     @GetMapping("/todos")
     @ApiOperation("Get all Register")
     @ApiResponse(code = 200 , message = "Data of DB")

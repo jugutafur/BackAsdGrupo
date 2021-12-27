@@ -20,6 +20,10 @@ public class MaquinariaController {
     @Autowired
     private MachineService machineService;
 
+    @GetMapping(value = "status")
+    String checkStatus(){
+        return "ok";
+    }
 
     @GetMapping("/todos")
     @ApiOperation("Get all Register")

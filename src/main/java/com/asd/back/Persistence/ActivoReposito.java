@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public class ActivoRepository implements ActiveRepository {
+public class ActivoReposito implements ActiveRepository {
 
     @Autowired
     private ActivoCRUDRepository activoCRUDRepository;
@@ -71,6 +71,8 @@ public class ActivoRepository implements ActiveRepository {
             List<Active> activos = activoCRUDRepository.findByType(type);
 
         }
-         */
+        */
     }
 }
+    
+

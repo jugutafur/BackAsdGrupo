@@ -20,6 +20,11 @@ public class TipoController {
     @Autowired
     private TypeService typeService;
 
+    @GetMapping(value = "status")
+    String checkStatus(){
+        return "ok";
+    }
+
 
     @GetMapping("/todos")
     @ApiOperation("Get all Register")

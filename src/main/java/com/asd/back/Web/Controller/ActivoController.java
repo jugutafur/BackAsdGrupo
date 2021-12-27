@@ -22,6 +22,11 @@ public class ActivoController {
     @Autowired
     private ActiveService activeService;
 
+    @GetMapping(value = "status")
+    String checkStatus(){
+        return "ok";
+    }
+
     @GetMapping("/todos")
     @ApiOperation("Get all Register")
     @ApiResponse(code = 200 , message = "Data of DB")

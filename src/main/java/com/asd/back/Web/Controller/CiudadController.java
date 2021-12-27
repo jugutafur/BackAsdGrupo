@@ -19,6 +19,10 @@ public class CiudadController {
     @Autowired
     private CityService cityService;
 
+    @GetMapping(value = "status")
+    String checkStatus(){
+        return "ok";
+    }
 
     @GetMapping("/todos")
     @ApiOperation("Get all Register")

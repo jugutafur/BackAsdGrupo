@@ -8,5 +8,5 @@ import java.util.List;
 import java.util.Optional;
 
 public interface ActivoCRUDRepository extends CrudRepository<Activo, Integer> {
-    List<Activo> findByTipo(int tipo);
+    //List<Activo> findByTipo(int tipo);
 }
